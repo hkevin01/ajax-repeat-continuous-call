@@ -1,0 +1,1 @@
+# ajax-repeat-continuous-call
