@@ -1,0 +1,20 @@
+{
+  "name": "ajax-repeat-continuous-call",
+  "version": "1.0.0",
+  "description": "AJAX polling utility for continuous server communication and UI updates.",
+  "main": "src/wait.js",
+  "scripts": {
+    "test": "echo \"No tests yet\"",
+    "lint": "eslint src/wait.js",
+    "format": "prettier --write src/wait.js"
+  },
+  "author": "hkevin01",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}
