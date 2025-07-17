@@ -1,30 +1,26 @@
-# Development Workflow
+# WORKFLOW
+
+This document describes the development workflow for the ajax-repeat-continuous-call project.
 
 ## Branching Strategy
-- Use `main` for stable releases
-- Use `dev` for active development
-- Feature branches: `feature/<name>`
-- Bugfix branches: `bugfix/<name>`
-- Pull requests must be reviewed before merging
+- Use `master` for stable releases
+- Create feature branches for new features (`feature/<name>`)
+- Use pull requests for merging changes
 
-## CI/CD Pipeline
-- GitHub Actions for build, test, and deploy
-- Automated linting and formatting checks
-- Run unit tests on every push and PR
-- Deploy to staging on successful test pass
-- Manual approval for production deploys
+## CI/CD Pipelines
+- GitHub Actions automate build, test, and deploy
+- Workflows are defined in `.github/workflows/`
+- All commits and pull requests trigger automated tests
 
-## Code Review Process
-- All PRs require at least one approval
-- Use issue and PR templates for consistency
-- Check for code style, documentation, and test coverage
-- Address review comments before merging
+## Code Review
+- All changes require code review via pull requests
+- Use PR templates for consistency
+- CODEOWNERS file defines reviewers
 
-## Issue Management
-- Use labels for bug, enhancement, documentation, etc.
-- Assign issues to milestones
-- Link PRs to relevant issues
+## Deployment
+- Automated deployment via GitHub Actions
+- Manual deployment scripts available in `scripts/`
 
-## Security
-- Report vulnerabilities via SECURITY.md
-- Review dependencies for known issues
+## Contribution
+- Follow guidelines in `CONTRIBUTING.md`
+- All contributors must sign off on changes

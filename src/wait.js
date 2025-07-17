@@ -4,8 +4,9 @@
 /**
  * Polls the server for observation results and updates the UI accordingly.
  * @param {string} filename - The name of the file to check for results.
+ * @returns {void}
  */
-function waitForMSG(filename) {
+export function waitForMSG(filename) {
   $.ajax({
     url: `${urlPath}obsResult.php`,
     dataType: 'json',
@@ -37,7 +38,7 @@ function waitForMSG(filename) {
   });
 }
 
-// Export for testing
+// For CommonJS compatibility
 if (typeof module !== 'undefined') {
-  module.exports = waitForMSG;
+  module.exports = { waitForMSG };
 }
