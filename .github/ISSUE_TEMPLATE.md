@@ -5,9 +5,15 @@
 Please describe the issue clearly and concisely.
 
 ## Steps to Reproduce
+<<<<<<< HEAD
 1. 
 2. 
 3. 
+=======
+1.
+2.
+3.
+>>>>>>> 27e7cf5 (Recovered after power outage)
 
 ## Expected Behavior
 
